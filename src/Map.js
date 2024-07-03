@@ -28,7 +28,7 @@ const Map = () => {
 
   const fetchLocation = async () => {
     try {
-      const response = await fetch('https://8013-38-25-34-82.ngrok-free.app/api/gps', {
+      const response = await fetch('https://3016-38-25-34-82.ngrok-free.app/api/gps', {
         headers: {
           'ngrok-skip-browser-warning': 'true'
         }
@@ -54,7 +54,7 @@ const Map = () => {
 
   useEffect(() => {
     fetchLocation();
-    const interval = setInterval(fetchLocation, 5000); // Actualizar cada 5 segundos
+    const interval = setInterval(fetchLocation, 2000); // Actualizar cada 5 segundos
     return () => clearInterval(interval);
   }, []);
 
