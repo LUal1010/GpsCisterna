@@ -28,7 +28,7 @@ const Map = () => {
 
   const fetchLocation = async () => {
     try {
-      const response = await fetch('https://6e1f-189-28-91-154.ngrok-free.app/api/gps', {
+      const response = await fetch('https://ac9c-189-28-91-154.ngrok-free.app/api/gps', {
         headers: {
           'ngrok-skip-browser-warning': 'true'
         }
