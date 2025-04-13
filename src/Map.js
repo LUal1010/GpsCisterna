@@ -28,7 +28,7 @@ const Map = () => {
 
   const fetchLocation = async () => {
     try {
-      const response = await fetch('https://80bc-189-28-91-154.ngrok-free.app/api/gps', {
+      const response = await fetch('https://6e1f-189-28-91-154.ngrok-free.app/api/gps', {
         headers: {
           'ngrok-skip-browser-warning': 'true'
         }
@@ -67,6 +67,7 @@ const Map = () => {
         <RecenterMap lat={location.lat} lng={location.lng} />
       </MapContainer>
       <button className="refresh-button" onClick={fetchLocation}>Actualizar</button>
+      <p>Lat: {location.lat.toFixed(6)} | Lng: {location.lng.toFixed(6)}</p>
     </div>
   );
 };
